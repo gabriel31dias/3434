@@ -67,28 +67,22 @@
         <div style="flex: 1">
           <p style="line-height: 25px">
             EU,
-            <span> <u
-
-              
-            
-            
-            > {{ $citizen->name }} <u>
-              </span
-            >, <br /> brasileiro (a), portador (a) do RG.: <span> <u> {{ $citizen->rg }} </u> </span>, CPF:
-            <span> <u> {{ $citizen->cpf }}  </u></span>,
-            FONE: <span><u> {{ $citizen->telephone }} </u></span>, <br /> na falta de um
+            <span style="display: inline-block;width: 70%; border-bottom: 1px solid">{{ $citizen->name }}</span
+            >, brasileiro (a),<br> portador (a) do RG.: <span style="display: inline-block;width: 30%; border-bottom: 1px solid">  {{ $citizen->rg }}  </span>, CPF:
+            <span style="display: inline-block;width:30%; border-bottom: 1px solid">  {{ $citizen->cpf }} </span>,<br>
+            FONE: <span style="display: inline-block;width:40%; border-bottom: 1px solid"> {{ $citizen->telephone }}</span>,  na falta de um
             comprovante de endereço. <br />
             <strong
-              >DECLARO para devidos fins, <br />nos termos da LEI Nº 7.115, DE 29 DE
+              >DECLARO para devidos fins, nos termos da LEI Nº 7.115, DE 29 DE
               AGOSTO DE 1983.</strong
             >
-            <br /> que mantenho residência e domicilio no endereço:
-            <span>
-             <u> {{ $citizen->address }}, complementento {{ $citizen->complement }} </u></span
+            que <br> mantenho residência e domicilio no endereço:
+            <span style="display: inline-block;width: 45%; border-bottom: 1px solid">
+              {{ $citizen->address }}, complementento {{ $citizen->complement }}</span
             >
             <br />
             BAIRRO:
-            <span
+            <span style="display: inline-block;width: 80%; border-bottom: 1px solid"
               >_______________________________________________________________</span
             >,
             <br />
@@ -98,14 +92,14 @@
             >,
 
             <br />
-            <br />
+       
             <strong>DECLARO</strong> ainda, à luz do que dispõe o Art. 299 do
             Código Penal Brasileiro, que as informações aqui prestadas
             representam a expressão da verdade, sob pena de
             <strong>Responsabilidade Civil</strong>,<br />
             <strong>Administrativa e Penal</strong>. <br />
 
-            <br />
+          
           </p>
           <p style="margin-left: 120px; margin-top: 20px">
             Por ser verdade, firmo a presente.
@@ -117,7 +111,7 @@
 
           <p style="text-align: center; margin-top: 40px">
             __________________________________________________ <br />
-            <br />
+           
             ASSINATURA
           </p>
 
@@ -143,7 +137,7 @@
               margin: 20px auto;
               font-weight: 500;
               text-align: justify;
-              line-height: 20px;
+              line-height: 10px;
               font-size: 12px;
             "
           >
